@@ -1,0 +1,26 @@
+---
+const { number, item } = Astro.props
+---
+
+<li class="c-list-item">
+  <span>{number}</span> {item}
+</li>
+
+<style lang="scss">
+.c-list-item {
+  color: var(--off-white);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(45, 45, 44, 0.4);
+  margin-bottom: 20px;
+  line-height: var(--line-height-text);
+
+  span {
+    color: var(--golden);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-right: 20px;
+  }
+}
+</style>
