@@ -1,22 +1,12 @@
-<section class="c-hero">
-  <div class="c-hero__container">
+<section class="l-section">
+  <div class="l-section__container">
     <slot />
   </div>
 </section>
 
 <style lang="scss">
-.c-hero {
-  width: 100vw;
-  min-height: 100vh;
+.l-section {
   padding: 80px 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(20, 20, 46, 0.94813) 46.35%,
-    #121214 100%
-  );
-  z-index: -1;
-  display: flex;
 
   &__container {
     width: 100%;
@@ -25,11 +15,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
-
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
 
     @media (min-width: 1200px) {
       max-width: 1140px;

@@ -2,8 +2,9 @@
 import Headline from "../components/Headline.astro";
 import Hero from "../components/Hero.astro";
 import Picture from "../components/Picture.astro";
+import Title from "../components/Title.astro";
 import BaseLayout from "../layouts/BaseLayout.astro"
-
+import Section from "../layouts/Section.astro";
 ---
 
 <BaseLayout>
@@ -15,4 +16,59 @@ import BaseLayout from "../layouts/BaseLayout.astro"
       title="Imagem da consultora Dayane Silva"
     />
   </Hero>
+
+  <Section>
+    <Title 
+      title="Acredito que você viu no digital a oportunidade de construir um negócio e conquistar liberdade financeira."
+    />
+
+    <div class="l-wrapper">
+      <div class="l-wrapper__text">
+        <p>
+          Porém, você dedica muito tempo ao Instagram na produção de
+          conteúdo, stories, hacks e várias outras coisas e mesmo assim
+          não alcança resultados maiores.
+        </p>
+
+        <p>
+          E no fim, você acaba se comparando com quem tem mais resultados
+          e se pergunta: Onde estou errando?
+        </p>
+
+        <p>
+          O seu erro é priorizar apenas o Instagram e esquecer que para
+          construir uma marca forte, você precisa de um plano de negócios,
+          que te ajude a sair do “amadorismo” e gerenciar o seu negócio
+          com estratégia e foco em resultados.
+        </p>
+
+        <p>
+          Por experiência própria eu posso te dizer que: Para fazer seu
+          negócio crescer, o Instagram precisa ser seu aliado e uma
+          ferramenta para beneficiar a visibilidade da sua marca e a
+          atração de novos clientes e não o ponto MAIS importante do seu
+          trabalho.
+        </p>
+
+        <p>
+          Por isso, que através da Consultoria INTENSE quero te ajudar a
+          construir um posicionamento de empreendedora de sucesso,
+          mentalidade, postura e visão estratégica de crescimento para
+          conquistar uma marca FORTE!
+        </p>
+
+        <p>
+          A Consultoria INTENSE será um direcionamento totalmente
+          personalizado às necessidades do seu negócio, para que você
+          consiga alcançar o sucesso que tanto deseja.
+        </p>
+      </div>
+
+      <Picture
+        path="image-benefits.png"
+        alt=""
+        title=""
+      />
+    </div>
+  </Section>
 </BaseLayout>
