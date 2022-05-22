@@ -40,7 +40,7 @@ body {
 
   &::before {
     content: '';
-    background: url(../../public/shape.svg) no-repeat right top;
+    background: url(/shape.svg) no-repeat right top;
     background-size: 60%;
     height: 100%;
     width: 100%;
