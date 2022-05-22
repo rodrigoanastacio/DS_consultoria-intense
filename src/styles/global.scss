@@ -65,3 +65,35 @@ img {
     flex: 1;
   }
 }
+
+.l-wrapper {
+  display: flex;
+  z-index: 1;
+  gap: 50px;
+  flex-direction: column-reverse;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__text {
+    flex: 1;
+    color: var(--off-white);
+
+    p {
+      font-size: 1.0625rem;
+      line-height: var(--line-height-text);
+      margin-bottom: 24px;
+    }
+  }
+
+  & .c-picture {
+    flex: 1;
+    text-align: center;
+  }
+
+  & img {
+    max-width: 475px;
+  }
+}

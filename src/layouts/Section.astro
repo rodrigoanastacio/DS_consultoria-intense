@@ -1,0 +1,28 @@
+<section class="l-section">
+  <div class="l-section__container">
+    <slot />
+  </div>
+</section>
+
+<style lang="scss">
+.l-section {
+  padding: 80px;
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+
+    @media (min-width: 1400px) {
+      max-width: 1320px;
+    }
+  }
+}
+</style>
