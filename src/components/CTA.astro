@@ -1,0 +1,22 @@
+---
+const { label, link } = Astro.props
+---
+
+<a class="c-button" href={link}>
+  { label }
+</a>
+
+<style lang="scss">
+.c-button {
+  background: linear-gradient(180deg, #fad25a 0%, #cfb53b 100%);
+  border-radius: 10px;
+  padding: 16px 45px;
+  font-size: var(--cta-font-size);
+  font-weight: 900;
+  color: var(--black-600);
+  text-decoration: none;
+  display: inline-flex;
+  text-align: center;
+  line-height: var(--line-height-title);
+}
+</style>

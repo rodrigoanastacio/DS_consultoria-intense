@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --white: #ffffff;
+    --off-white: #eeede8;
+    --golden: #e8cda2;
+  
+    --title-color: var(--off-white);
+  
+    --black-500: #121214;
+    --black-600: #0A0A11
+  
+    --font-primary: 'Source Serif Pro', serif;
+  
+    --headline-font-size: 2.375rem; /* 38px */
+    --subHeadline-font-size: 1.25rem; /* 18px */
+    --title-font-size: 1.875rem; /* 30px */
+    --cta-font-size: 1.5rem; /* 28px */
+  
+    --line-height-title: 125%;
+    --line-height-text: 150%;
+  }
+
+html {
+  font-family: var(--font-primary);
+}
+
+body {
+  position: relative;
+  background-color: var(--black-500);
+
+  &::before {
+    content: '';
+    background: url(../../public/shape.svg) no-repeat right top;
+    background-size: 60%;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.c-hero {
+  & .c-headline {
+    flex: 2;
+    margin-bottom: 50px;
+  }
+
+  & .c-picture {
+    flex: 1;
+  }
+}
